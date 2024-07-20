@@ -3,34 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Alatafamily=Rouge+Script&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Tienda</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="nav-header">
+        <ul class="listas">
           <li>
-            <img src="../assets/Group 1.png" alt="logo" />
+            <a href="index.html"
+              ><img src="../assets/Group 1.png" alt="logo" class="logo-nav" />
+            </a>
           </li>
           <li>
-            <a href="#">Catálogo</a>
+            <a href="./pages/vajilla.html" class="font-nav">Catálogo</a>
           </li>
           <li>
-            <a href="./acerca.html">Nuestra historia</a>
+            <a href="./pages/acerca.html" class="font-nav">Nuestra historia</a>
           </li>
           <li>
-            <a href="./galeria.html">Colección de fotos</a>
+            <a href="./pages/galeria-fotos.html" class="font-nav"
+              >Colección de fotos</a
+            >
           </li>
+        </ul>
+        <ul class="listas-2">
           <li>
-            <a href="#">Ingreso</a>
+            <a href="#" class="font-nav">Ingreso</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <div>
-        <ol>
+        <ol class="direccion">
           <li>
             <a href="../index.html">Home/</a>
           </li>
@@ -43,47 +64,55 @@
         </ol>
       </div>
       <h1>Vajilla</h1>
-      <section>
-        <div>
-          <h3>Precio</h3>
-          <button>
-            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" />
-          </button>
+      <!-- comienzo de filtros -->
+      <section class="filtro-container">
+        <div class="filtro-precio">
+          <div class="nombre-boton">
+            <h3>Precio</h3>
+            <button>
+              <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" class="drop"/>
+            </button>
+          </div>
           <div>
-            <input type="range" />
+            <form action="">
+              <input type="number" placeholder="Min">
+              <input type="number" placeholder="Max">
+            </form>
           </div>
           <div>
             <input type="range" />
           </div>
         </div>
         <hr />
-        <div>
+        <div class="nombre-boton">
           <h3>Estilos</h3>
           <button>
-            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" />
+            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha"  class="drop"/>
           </button>
         </div>
         <hr />
         <div>
-          <h3>Utensillos</h3>
+          <div class="nombre-boton">
+            <h3>Utensillos</h3>
           <button>
-            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" />
+            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" class="drop" />
           </button>
-          <ul>
-            <li><input type="radio" />Tazas</li>
-            <li><input type="radio" />Platos playos</li>
-            <li><input type="radio" />Platos hondos</li>
-            <li><input type="radio" />Cazuelas</li>
+          </div>
+          <ul class="lista-filtro">
+            <li><input type="radio" name="utensillo"/>Tazas</li>
+            <li><input type="radio" name="utensillo"/>Platos playos</li>
+            <li><input type="radio" name="utensillo"/>Platos hondos</li>
+            <li><input type="radio" name="utensillo"/>Cazuelas</li>
             <li>
               <a href="#">Ver más</a>
             </li>
           </ul>
         </div>
         <hr />
-        <div>
+        <div class="nombre-boton">
           <h3>Tamaños</h3>
           <button>
-            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" />
+            <img src="../assets/eva_arrow-up-fill.png" alt="icono flacha" class="drop" />
           </button>
         </div>
         <hr />

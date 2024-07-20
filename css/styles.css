@@ -106,7 +106,7 @@ video {
 }
 
 .logo-nav {
-  width: 11rem;
+  width: 10rem;
   height: 2.5rem;
 }
 
@@ -125,6 +125,21 @@ video {
 .hero-img div {
   width: 100%;
   background-color: rgba(8, 8, 8, 0.548);
+}
+
+.direccion {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+.direccion li a {
+  text-decoration: none;
+  color: #968773;
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
 }
 
 .titulo-section {
@@ -152,10 +167,65 @@ section {
   overflow: hidden;
 }
 
-.categorias {
+.filtro-container {
+  padding: 1rem;
+  width: 18.25rem;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+}
+
+.drop {
+  width: 1rem;
+  height: 1rem;
+}
+
+.filtro-precio {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 31.25rem;
-  margin-bottom: 3.125rem;
+}
+
+.filtro-precio div {
+  padding-bottom: 0.75rem;
+}
+
+.filtro-precio div form {
+  display: flex;
+}
+
+.filtro-precio div form input {
+  width: 6.125rem;
+  margin-right: 0.75rem;
+}
+
+.nombre-boton {
+  display: flex;
+  font-family: "Alata", sans-serif;
+  font-size: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nombre-boton button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  background: none;
+}
+
+.lista-filtro {
+  list-style-type: none;
+}
+
+.lista-filtro li {
+  padding-bottom: 0.5rem;
+}
+
+.lista-filtro li a {
+  text-decoration: none;
 }
 
 .vajilla {
