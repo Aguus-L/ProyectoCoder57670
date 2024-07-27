@@ -3,34 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Alatafamily=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>TerraZen</title>
+    <title>Tienda</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="nav-header">
+        <ul class="listas">
           <li>
-            <img src="../assets/Group 1.png" alt="logo" />
+            <a href="../index.html"
+              ><img src="../assets/Group 1.png" alt="logo" class="logo-nav" />
+            </a>
           </li>
           <li>
-            <a href="#">Catálogo</a>
+            <a href="./vajilla.html" class="font-nav">Catálogo</a>
           </li>
           <li>
-            <a href="./acerca.html">Nuestra historia</a>
+            <a href="./acerca.html" class="font-nav">Nuestra historia</a>
           </li>
           <li>
-            <a href="./galeria-fotos.html">Colección de fotos</a>
+            <a href="./galeria-fotos.html" class="font-nav"
+              >Colección de fotos</a
+            >
           </li>
+        </ul>
+        <ul class="listas-2">
           <li>
-            <a href="#">Ingreso</a>
+            <a href="#" class="font-nav">Ingreso</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <div>
-        <ol>
+        <ol class="direccion">
           <li>
             <a href="../index.html">Home/</a>
           </li>
@@ -41,32 +65,33 @@
             <a href="./vajilla.html">Vajilla/</a>
           </li>
           <li>
-            <a href="./taza-pato.html">Pato peligroso</a>
+            <a href="#">TazaPato</a>
           </li>
         </ol>
       </div>
-      <section>
-        <div>
-          <div>
+      <!-- seccion de producto -->
+      <section class="seccion-producto">
+        <div class="foto-container">
+          <div class="foto-1">
             <img
               src="../assets/46bca26d67ae12a4373165bd1426d331.jpg"
               alt="taza de pato sosteniendo un cuchillo"
             />
           </div>
-          <div>
-            <div>
+          <div class="fotos-abajo">
+            <div class="foto-2">
               <img
                 src="../assets/f4aa982e137818422afa34ac975b5edf.jpg"
                 alt="muchas tazas de patos sosteniendo un cuchillo"
               />
             </div>
-            <div>
+            <div class="foto-2">
               <img
                 src="../assets/Captura.PNG"
                 alt="taza de pato sosteniendo un cuchillo sobre otra"
               />
             </div>
-            <div>
+            <div class="foto-2">
               <img
                 src="../assets/1f42b69832224599aff41639b8238fb2.jpg"
                 alt="varias tazas de animales sosteniendo un cuchillo"
@@ -74,38 +99,50 @@
             </div>
           </div>
         </div>
-        <article>
+        <!-- fin fotos, comienzo descripcion -->
+        <article class="descripcion">
           <h2>Pato peligroso</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sequi
             harum necessitatibus quibusdam, explicabo dignissimos voluptates
             tempora aperiam incidunt quis et. Vitae, tenetur eveniet. Totam,
-            ducimus eius? Voluptatum, totam est!
+            ducimus eius? Voluptatum, totam est! Est sequi harum necessitatibus
+            quibusdam, explicabo dignissimos voluptates.
           </p>
           <div>
-            <h4>Cantidad</h4>
-            <div>
+            <h4 class="cantidad">Cantidad</h4>
+            <div class="boton-cantidad-container">
               <div>
-                <button>
+                <button class="boton-cantidad-1">
                   <div>-</div>
                 </button>
               </div>
               <div>
-                <input type="number" name="cantidad" id="cantidad" value="1" />
+                <input
+                  type="number"
+                  name="cantidad"
+                  id="cantidad"
+                  value="1"
+                  class="numero"
+                />
               </div>
               <div>
-                <button>
+                <button class="boton-cantidad-2">
                   <div>+</div>
                 </button>
               </div>
             </div>
-            <h4>$1000</h4>
-            <button>Comprar</button>
-            <button><img src="../assets/Vector.png" alt="" /></button>
+            <h4 class="precio">$1000</h4>
+            <div class="boton-comprar-container">
+              <button class="boton-comprar">COMPRAR</button>
+              <button class="boton-favoritos">
+                <img src="../assets/Vector.png" alt="corazon" />
+              </button>
+            </div>
           </div>
         </article>
       </section>
-      <section>
+      <section class="section-con-titulo">
         <div>
           <h2>Descripción</h2>
         </div>
@@ -114,98 +151,130 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
             provident inventore, possimus veniam, quaerat excepturi libero
             repellendus assumenda, temporibus nulla dolorum. Quam, neque. Quam
-            nobis numquam voluptas velit nam nesciunt.
+            nobis numquam voluptas velit nam nesciunt. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit.Corrupti provident inventore,
+            possimus veniam, quaerat excepturi libero repellendus assumenda,
+            temporibus nulla dolorum. Quam, neque. Quam nobis numquam voluptas
+            velit nam nesciunt.
           </p>
         </div>
       </section>
-      <section>
+      <section class="section-con-titulo">
         <h2>Visto recientemente</h2>
-        <div>
-          <div>
-            <img
-              src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
-              alt="taza azul"
-            />
+        <article class="flex-column">
+          <div class="card-container">
+            <div class="img-card-container">
+              <img
+                src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
+                alt="taza azul"
+              />
+            </div>
+            <div class="texto-card">
+              <h3>Azul</h3>
+              <h3>$5.000</h3>
+            </div>
           </div>
-          <div>
-            <h3>Azul</h3>
-            <h3>$5.000</h3>
+          <div class="card-container">
+            <div class="img-card-container">
+              <img
+                src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
+                alt="taza azul"
+              />
+            </div>
+            <div class="texto-card">
+              <h3>Azul</h3>
+              <h3>$5.000</h3>
+            </div>
           </div>
-          <div>
-            <img
-              src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
-              alt="taza azul"
-            />
+          <div class="card-container">
+            <div class="img-card-container">
+              <img
+                src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
+                alt="taza azul"
+              />
+            </div>
+            <div class="texto-card">
+              <h3>Azul</h3>
+              <h3>$5.000</h3>
+            </div>
           </div>
-          <div>
-            <h3>Azul</h3>
-            <h3>$5.000</h3>
+          <div class="card-container">
+            <div class="img-card-container">
+              <img
+                src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
+                alt="taza azul"
+              />
+            </div>
+            <div class="texto-card">
+              <h3>Azul</h3>
+              <h3>$5.000</h3>
+            </div>
           </div>
-          <div>
-            <img
-              src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
-              alt="taza azul"
-            />
-          </div>
-          <div>
-            <h3>Azul</h3>
-            <h3>$5.000</h3>
-          </div>
-          <div>
-            <img
-              src="../assets/c2f56493fb3eda3ec447ca1abe69ff8e.jpg"
-              alt="taza azul"
-            />
-          </div>
-          <div>
-            <h3>Azul</h3>
-            <h3>$5.000</h3>
-          </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer>
-      <img src=".-/assets/Group 1.png" alt="logo" />
-      <nav>
-        <h6>Shop</h6>
-        <li>
-          <a href="./vajilla.html">Vajilla</a>
-        </li>
-        <li>
-          <a href="#">Deco Hogar</a>
-        </li>
-        <li>
-          <a href="#">Colecciones</a>
-        </li>
-        <li>
-          <a href="#">Talleres</a>
-        </li>
-      </nav>
-      <nav>
-        <h6>Acerca de</h6>
-        <li>
-          <a href="#">Nuestra historia</a>
-        </li>
-        <li>
-          <a href="#">Servicio al cliente</a>
-        </li>
-        <li>
-          <a href="#">Términos y condiciones</a>
-        </li>
-        <li>
-          <a href="#">Política de cancelación</a>
-        </li>
-      </nav>
-      <a href="#">
-        <img src="../assets/logos_facebook.png" alt="facebook" />
-      </a>
-      <a href="#">
-        <img src="../assets/skill-icons_instagram.png" alt="instagram" />
-      </a>
-      <a href="#">
-        <img src="../assets/logos_youtube-icon.png" alt="youtube" />
-      </a>
-      <a href="#">Contáctanos</a>
+      <div class="logo-footer">
+        <img src="../assets/Group 1.png" alt="logo" />
+      </div>
+      <div>
+        <nav>
+          <h6>Shop</h6>
+          <ul class="lista-footer">
+            <li>
+              <a href=".vajilla.html" class="font-footer">Vajilla</a>
+            </li>
+            <li>
+              <a href="#" class="font-footer">Deco Hogar</a>
+            </li>
+            <li>
+              <a href="#" class="font-footer">Colecciones</a>
+            </li>
+            <li>
+              <a href="#" class="font-footer">Talleres</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <h6>Acerca de</h6>
+          <ul class="lista-footer">
+            <li>
+              <a href="#" class="font-footer">Nuestra historia</a>
+            </li>
+            <li>
+              <a href="#" class="font-footer">Servicio al cliente</a>
+            </li>
+            <li>
+              <a href="#" class="font-footer">Términos y condiciones</a>
+            </li>
+            <li>
+              <a href="#" class="font-footer">Política de cancelación</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="botones-footer">
+        <div class="primer-grupo-botones">
+          <a href="#">
+            <img src="../assets/logos_facebook.png" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="../assets/skill-icons_instagram.png" alt="instagram" />
+          </a>
+          <a href="#">
+            <img
+              class="youtube"
+              src="../assets/logos_youtube-icon.png"
+              alt="youtube"
+            />
+          </a>
+        </div>
+        <div class="boton-solo">
+          <a href="#" class="font-footer">CONTACTANOS</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

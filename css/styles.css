@@ -63,6 +63,13 @@ h1 {
   font-size: 64px;
 }
 
+p,
+h3,
+h4 {
+  font-family: "Alata", sans-serif;
+  font-size: 16px;
+}
+
 span {
   font-family: "Rouge Script", cursive;
   font-size: 128px;
@@ -87,6 +94,10 @@ p,
 h6 {
   font-family: "Alata", sans-serif;
   font-size: 20px;
+}
+
+.section-con-titulo {
+  flex-direction: column;
 }
 
 .font-footer {
@@ -148,7 +159,7 @@ video {
   text-decoration: none;
   color: #968773;
   font-family: "Alata", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .titulo-section {
@@ -424,6 +435,141 @@ section {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 6.25rem;
+}
+
+.seccion-producto {
+  width: 77.5rem;
+  gap: 1.5rem;
+}
+
+.foto-container {
+  width: 38rem;
+  height: 37.25rem;
+}
+
+.foto-1 {
+  width: 38rem;
+  height: 27.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.foto-1 img {
+  width: 38rem;
+  height: 27.875rem;
+  object-fit: cover;
+}
+
+.fotos-abajo {
+  width: 38rem;
+  height: 9.375rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.foto-2 {
+  width: 12.1667rem;
+  height: 9.375rem;
+}
+
+.foto-2 img {
+  width: 12.1667rem;
+  height: 9.375rem;
+  object-fit: cover;
+}
+
+.descripcion {
+  width: 38rem;
+  height: 37rem;
+}
+
+.descripcion p {
+  margin-bottom: 2rem;
+}
+
+.cantidad {
+  margin-bottom: 1rem;
+}
+
+.boton-cantidad-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.boton-cantidad-1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1rem 0 0 1rem;
+  border-right-style: none;
+  background-color: #968773;
+  border-color: black;
+  color: white;
+}
+
+.boton-cantidad-2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0 1rem 1rem 0;
+  border-left-style: none;
+  background-color: #968773;
+  border-color: black;
+  color: white;
+}
+
+.numero {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-left-style: none;
+  border-right-style: none;
+  border-color: black;
+  text-align: center;
+}
+
+.precio {
+  font-family: "Alata", sans-serif;
+  font-size: 64px;
+  color: #ff805a;
+  margin-bottom: 1.75rem;
+}
+
+.boton-comprar-container {
+  display: flex;
+  width: 24.375rem;
+  height: 4.625;
+}
+
+.boton-comprar {
+  width: 13.75rem;
+  height: 4.625rem;
+  background-color: #ff805a;
+  border-radius: 16px;
+  border: none;
+  color: #7b400b;
+  font-family: "Alata", sans-serif;
+  font-size: 32px;
+  margin-right: 6rem;
+}
+
+.boton-favoritos {
+  width: 4.625rem;
+  height: 4.625rem;
+  background-color: none;
+  border-radius: 16px;
+  border-color: #ff805a;
+  color: #ff805a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-favoritos img {
+  width: 1.75rem;
+  height: 1.625rem;
 }
 
 footer img {
