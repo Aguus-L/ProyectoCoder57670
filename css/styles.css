@@ -137,6 +137,21 @@ video {
   display: flex;
 }
 
+.hero-img-acerca {
+  height: 31.25rem;
+  margin-bottom: 4.375rem;
+  background-image: url(../assets/portrait-mother-little-girl-shaping-clay-together.jpg);
+  display: flex;
+  background-size: cover;
+}
+
+.hero-img-acerca div h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7b400b;
+}
+
 .hero-img div h1 {
   margin-top: 4rem;
   margin-left: 4rem;
@@ -145,6 +160,88 @@ video {
 .hero-img div {
   width: 100%;
   background-color: rgba(8, 8, 8, 0.548);
+}
+
+.hero-img-acerca div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  height: 31.25rem;
+  margin-bottom: 4.375rem;
+}
+
+.video video {
+  object-fit: cover;
+}
+
+.frase-1 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+  font-size: 1.5rem;
+}
+
+.frase-2 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alata", sans-serif;
+  font-size: 2.5rem;
+}
+
+.valores {
+  width: 100%;
+  height: 450px;
+  margin: 4.375rem 0 4.375rem 0;
+}
+
+.valores div {
+  width: 100%;
+  height: 150px;
+}
+
+.valores div h1 {
+  height: fit-content;
+}
+
+.valor-izq-1 {
+  width: 100vp !important;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../assets/wooden-walkway-leads-beacons-safety-as-twilight-colors-horizon.jpg);
+  background-size: cover;
+  padding-left: 12.5rem;
+}
+
+.valor-centro {
+  width: 100vp !important;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-image: url(../assets/network-concept-with-red-thread-top-view.jpg);
+  background-size: cover;
+  padding-right: 12.5rem;
+}
+
+.valor-izq-2 {
+  width: 100vp !important;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url(../assets/sun-shining-through-trees.jpg);
+  background-size: cover;
+  padding-left: 12.5rem;
 }
 
 .direccion {
@@ -174,17 +271,31 @@ section {
 .text-section {
   width: 50%;
   height: 36rem;
+  padding-right: 1rem;
 }
 
 .text-section p {
   margin-bottom: 2.25rem;
   text-indent: 1.5rem;
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
 }
 
 .img-section {
   width: 50%;
   height: 31.25rem;
   overflow: hidden;
+}
+
+.img-section-2 {
+  width: 50%;
+  height: 31.25rem;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+
+.img-section-2 img {
+  height: 100%;
 }
 
 .filtro-container {
