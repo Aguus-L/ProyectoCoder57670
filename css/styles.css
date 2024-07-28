@@ -298,6 +298,62 @@ section {
   height: 100%;
 }
 
+.portada-galeria {
+  width: 100%;
+  height: 37.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ff805a;
+  background-image: url(../assets/Heroimageportada.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.portada-galeria h1 {
+  height: auto;
+}
+
+.bloque-img-galeria {
+  width: 100%;
+  height: 28.125rem;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.bloque-img-1 {
+  width: 24.8125rem;
+  height: 100%;
+}
+
+.bloque-img-1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bloque-img-2 {
+  width: 24.8125rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bloque-img-2 div {
+  width: 100%;
+  height: 13.3125rem;
+}
+
+.bloque-img-2 div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .filtro-container {
   padding: 1rem;
   width: 18.25rem;
@@ -452,10 +508,10 @@ section {
 }
 
 .titulo-con-boton div {
+  width: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
 }
 
 .galeria {
