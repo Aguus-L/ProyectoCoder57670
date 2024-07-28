@@ -41,16 +41,16 @@ main {
 
 .listas {
   list-style-type: none;
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .listas-2 {
   list-style-type: none;
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: right;
@@ -126,8 +126,13 @@ video {
 }
 
 .logo-nav {
-  width: 10rem;
+  display: flex;
+  width: 9rem;
   height: 2.5rem;
+  background-image: url(../assets/Group\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center;
 }
 
 .hero-img {
@@ -155,6 +160,7 @@ video {
 .hero-img div h1 {
   margin-top: 4rem;
   margin-left: 4rem;
+  color: white;
 }
 
 .hero-img div {
@@ -753,8 +759,12 @@ footer {
 }
 
 .logo-footer {
+  width: 15rem;
+  height: 6rem;
   display: flex;
-  align-items: center;
+  background-image: url(../assets/Group\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   justify-content: center;
 }
 
@@ -823,4 +833,86 @@ footer div nav {
   background-color: #ff805a;
   border-radius: 0.75rem;
   color: #7b400b;
+}
+
+@media (max-width: 744px) {
+  main {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  .logo-nav {
+    width: 6rem;
+    background-image: url(../assets/terra.png);
+  }
+  .font-nav {
+    font-size: 1rem;
+  }
+  .listas {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .listas-2 {
+    width: 10%;
+    justify-content: center;
+  }
+  .nav-header {
+    justify-content: space-evenly;
+  }
+  .hero-img {
+    height: 18.75rem;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+  }
+  .hero-img div h1 {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 2.25rem;
+  }
+  span {
+    font-size: 4rem;
+  }
+  .titulo-section {
+    margin: 0;
+    justify-content: left;
+  }
+  .text-section {
+    height: 31.25rem;
+  }
+  .text-section p {
+    height: 25rem;
+    overflow: hidden;
+    text-overflow: ellipsis; /* NO FUNCIONA, tampoco con white-space: nowrap */
+  }
+  .vajilla a {
+    margin-top: 0.5rem;
+  }
+  .vajilla-container a {
+    font-size: 1.875rem;
+  }
+  .deco-container a {
+    font-size: 1.875rem;
+    margin-top: 0.5rem;
+  }
+  .flecha {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+  .titulo-con-boton div {
+    justify-content: right;
+  }
+  .galeria {
+    height: 19.75rem;
+    margin-bottom: 3rem;
+  }
+  .logo-footer {
+    width: 4rem;
+    background-image: url(../assets/Group\ 2.png);
+  }
+  footer {
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  footer div:not(.logo-footer) {
+    width: 11.75rem;
+  }
 }
