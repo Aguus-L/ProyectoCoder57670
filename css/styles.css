@@ -110,6 +110,9 @@ h6 {
   color: black;
   list-style-type: none;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -136,6 +139,7 @@ video {
   background-image: url(../assets/Group\ 1.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   justify-content: center;
 }
 
@@ -225,7 +229,7 @@ video {
 }
 
 .valor-izq-1 {
-  width: 100vp !important;
+  width: 100vp; /* NO FUNCIONA */
   display: flex;
   justify-content: left;
   align-items: center;
@@ -235,7 +239,7 @@ video {
 }
 
 .valor-centro {
-  width: 100vp !important;
+  width: 100vp; /* NO FUNCIONA */
   display: flex;
   justify-content: right;
   align-items: center;
@@ -245,7 +249,7 @@ video {
 }
 
 .valor-izq-2 {
-  width: 100vp !important;
+  width: 100vp; /* NO FUNCIONA */
   display: flex;
   justify-content: left;
   align-items: center;
@@ -839,16 +843,96 @@ footer div nav {
   color: #7b400b;
 }
 
+.boton-solo-container {
+  height: 40%;
+}
+
+.btn-bd-primary {
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #7b400b;
+  --bs-btn-bg: #ff805a;
+  --bs-btn-border-color: #ff805a;
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: var(--bs-btn-bg);
+  --bs-btn-hover-border-color: var(--bs-btn-bg);
+  --bs-btn-focus-shadow-rgb: var(--bd-pink-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-pink, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-pink, 20%)};
+}
+
+.btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bg-dark {
+  background-color: #7b400b !important;
+}
+
+.nav-item {
+  padding-left: 0.5rem;
+  transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+  background-color: #ff805a;
+}
+
+.navbar-brand:hover {
+  background-color: #ff805a;
+}
+
+.nav-link {
+  color: black;
+  font-family: "Alata", sans-serif;
+  font-size: 20px;
+}
+
+.navbar-toggler-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.container {
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+}
+
+/* Las siguientes declaraciones no las lee el navegador */
+
+.navbar-dark .navbar-toggler {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler:hover {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 128, 90, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Fin declaraciones no leidas*/
+
 @media (max-width: 744px) {
   main {
     margin: 0 1.5rem 0 1.5rem;
   }
   .logo-nav {
     width: 6rem;
+    margin: 0;
     background-image: url(../assets/terra.png);
   }
   .font-nav {
     font-size: 1rem;
+  }
+  .navbar-nav .nav-item .nav-link {
+    width: max-content;
+  }
+  .nav-link {
+    color: black;
+    font-family: "Alata", sans-serif;
+    font-size: 16px;
   }
   .listas {
     width: 70%;
@@ -919,6 +1003,28 @@ footer div nav {
   footer div:not(.logo-footer) {
     width: 11.75rem;
   }
+  .portada-galeria {
+    height: 18.75rem;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+  }
+  .portada-galeria h1 {
+    font-size: 2.25rem;
+  }
+  .bloque-img-galeria,
+  .bloque-img-2 {
+    height: 18.75rem;
+  }
+  .bloque-img-2 div {
+    height: 50%;
+    overflow: hidden;
+  }
+}
+
+ol,
+ul {
+  padding-left: 0;
 }
 
 @media (max-width: 320px) {
@@ -929,10 +1035,10 @@ footer div nav {
     height: 3.125rem;
   }
   .listas li:not(:first-child) {
-    display: none;
+    /* display: none; */
   }
   .listas-2 li {
-    display: none;
+    /* display: none; */
   }
   .hero-img {
     height: 10.375rem;
@@ -1010,12 +1116,14 @@ footer div nav {
   }
   footer {
     flex-direction: column;
-    height: 22.75rem;
+    height: 28rem;
+    padding-bottom: 2rem;
   }
   h6 {
     font-size: 1rem;
   }
   .font-footer {
+    font-family: "Alata", sans-serif;
     font-size: 0.75rem;
   }
   .logo-footer {
@@ -1025,6 +1133,7 @@ footer div nav {
     gap: 0.75rem;
     margin-top: 1.25rem;
     padding: 0;
+    height: 140px;
   }
   .primer-grupo-botones a img {
     width: 1.5rem;
@@ -1050,5 +1159,38 @@ footer div nav {
     padding-top: 1.5rem;
     gap: 1rem;
     padding-bottom: 0;
+  }
+  .portada-galeria {
+    height: 9.375rem;
+  }
+  .portada-galeria h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .bloque-img-galeria {
+    height: 9.375rem;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .bloque-img-2 div {
+    height: 50%;
+    overflow: hidden;
+  }
+  .bloque-img-2 {
+    display: none;
+  }
+  h6 {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: black;
+  }
+  .container {
+    margin: 0;
+  }
+  .boton-solo-container {
+    display: flex;
+    justify-content: center;
   }
 }
