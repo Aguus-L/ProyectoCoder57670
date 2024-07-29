@@ -1034,12 +1034,6 @@ ul {
   .nav-header {
     height: 3.125rem;
   }
-  .listas li:not(:first-child) {
-    /* display: none; */
-  }
-  .listas-2 li {
-    /* display: none; */
-  }
   .hero-img {
     height: 10.375rem;
     background-size: cover;
