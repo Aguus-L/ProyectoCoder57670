@@ -1,0 +1,603 @@
+html {
+  box-sizing: border-box;
+  font-size: 1rem; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+main {
+  margin-left: 100px;
+  margin-right: 100px; }
+
+body {
+  font-family: "texto", sans-serif; }
+
+h1 {
+  height: 6.25rem;
+  font-family: "titulo", serif;
+  font-size: 4rem; }
+
+h2 {
+  width: 100%;
+  height: 6.25rem;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+h2 {
+  font-family: "texto", sans-serif;
+  font-size: 2.5rem;
+  color: black; }
+
+h3,
+h4 {
+  font-family: "texto", sans-serif;
+  font-size: 1rem; }
+
+p,
+h6 {
+  font-family: "texto", sans-serif;
+  font-size: 1.25rem; }
+
+span {
+  font-family: "acento", cursive;
+  font-size: 8rem; }
+
+a {
+  text-decoration: none; }
+
+img,
+video {
+  width: 100%; }
+
+footer {
+  background-color: #968773; }
+
+section {
+  display: flex; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+ol,
+ul {
+  padding-left: 0; }
+
+@font-face {
+  font-family: "acento";
+  src: url(../assets/RougeScript-Regular.ttf); }
+
+@font-face {
+  font-family: "titulo";
+  src: url(../assets/PlayfairDisplay-Regular.ttf); }
+
+@font-face {
+  font-family: "texto";
+  src: url(../assets/Poppins-Regular.ttf); }
+
+.nav-header {
+  width: 100%;
+  height: 4rem;
+  background-color: #7b400b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: normal;
+  flex-wrap: nowrap;
+  gap: normal; }
+  .nav-header .listas {
+    list-style-type: none;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: normal; }
+    .nav-header .listas li .logo-nav {
+      width: 9rem;
+      height: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: normal;
+      flex-wrap: nowrap;
+      gap: normal;
+      background-image: url("../assets/Group 1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    .nav-header .listas li .font-nav {
+      font-family: "texto", sans-serif;
+      font-size: 1.25rem;
+      color: black; }
+  .nav-header .listas-2 {
+    list-style-type: none;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: normal; }
+    .nav-header .listas-2 li .font-nav {
+      font-family: "texto", sans-serif;
+      font-size: 1.25rem;
+      color: black; }
+
+.hero-img {
+  height: 31.25rem;
+  margin-bottom: 4.375rem;
+  background-image: url("../assets/Hero image.png");
+  display: flex; }
+  .hero-img div {
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.548); }
+    .hero-img div h1 {
+      margin-top: 4rem;
+      margin-left: 4rem;
+      color: white; }
+
+section .titulo-section, section .titulo-con-boton h2, .titulo-con-boton section h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+section .text-section {
+  width: 50%;
+  height: 36rem;
+  padding-right: 1rem; }
+  section .text-section p {
+    margin-bottom: 2.25rem;
+    text-indent: 1.5rem;
+    font-family: "texto", sans-serif; }
+  section .text-section .buttom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: normal; }
+    section .text-section .buttom-container .buttom {
+      font-family: "texto", sans-serif;
+      font-size: 1.5rem;
+      color: black; }
+    section .text-section .buttom-container .img-buttom {
+      width: 3.125rem;
+      height: 3.125rem; }
+
+section .img-section {
+  width: 50%;
+  height: 31.25rem;
+  overflow: hidden; }
+
+.categorias .vajilla {
+  width: 50%;
+  height: 100%;
+  margin-right: 0.75rem;
+  overflow: hidden;
+  background-image: url("../assets/monochromatic-still-life-composition-with-tableware.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: unset; }
+  .categorias .vajilla .vajilla-container {
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: normal;
+    align-content: center; }
+    .categorias .vajilla .vajilla-container a {
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+      font-family: "texto", sans-serif;
+      font-size: 2.5rem;
+      color: black; }
+    .categorias .vajilla .vajilla-container .flecha {
+      width: 4rem;
+      height: 4rem; }
+
+.categorias .container-deco-coleccion {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  flex-wrap: nowrap;
+  gap: normal; }
+  .categorias .container-deco-coleccion .deco, .categorias .container-deco-coleccion .deco-coleccion {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    background-image: url("../assets/different-shaped-white-modern-vases-arrangement_23-2149835520.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset; }
+    .categorias .container-deco-coleccion .deco .deco-container, .categorias .container-deco-coleccion .deco-coleccion .deco-container {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-items: flex-start; }
+      .categorias .container-deco-coleccion .deco .deco-container a, .categorias .container-deco-coleccion .deco-coleccion .deco-container a {
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: normal;
+        font-family: "texto", sans-serif;
+        font-size: 2.5rem;
+        color: black; }
+      .categorias .container-deco-coleccion .deco .deco-container .flecha, .categorias .container-deco-coleccion .deco-coleccion .deco-container .flecha {
+        width: 4rem;
+        height: 4rem; }
+  .categorias .container-deco-coleccion .deco-coleccion {
+    background-image: url("../assets/close-up-arrangement-modern-vases.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; }
+    .categorias .container-deco-coleccion .deco-coleccion .deco-container a {
+      margin-top: 1.5rem;
+      margin-left: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: normal; }
+    .categorias .container-deco-coleccion .deco-coleccion .deco-container .flecha {
+      width: 4rem;
+      height: 4rem; }
+  .categorias .container-deco-coleccion .bg-2 {
+    background-image: url("../assets/mixing-clay-pottery-pot.jpg"); }
+  .categorias .container-deco-coleccion .bg-3 {
+    background-image: url("../assets/pew-nguyen-gwVW9PabQKM-unsplash.jpg"); }
+
+.categorias .bg-1 {
+  background-image: url("../assets/anne-nygard-sHyerRuFqT4-unsplash.jpg"); }
+
+.titulo-con-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: normal;
+  align-content: center; }
+  .titulo-con-boton div {
+    width: 18rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem; }
+    .titulo-con-boton div a {
+      font-family: "texto", sans-serif;
+      font-size: 1.25rem;
+      color: black; }
+    .titulo-con-boton div img {
+      width: 30%; }
+
+.galeria {
+  width: 100%;
+  height: 38rem;
+  margin-bottom: 4.375rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.75rem; }
+  .galeria img {
+    width: 100%;
+    height: 100%; }
+
+footer {
+  width: 100%;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: normal; }
+  footer .logo-footer {
+    width: 15rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    flex-wrap: nowrap;
+    gap: normal;
+    background-image: url("../assets/Group 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: unset; }
+  footer div {
+    width: 22.5rem;
+    height: 100%;
+    display: flex;
+    align-content: center; }
+    footer div nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 1.5rem;
+      align-content: center;
+      padding-top: 3rem;
+      column-gap: 1.5rem; }
+      footer div nav .lista-footer {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: normal;
+        align-content: center; }
+        footer div nav .lista-footer li .font-footer, footer div nav .lista-footer li .botones-footer .boton-solo a, footer .botones-footer .boton-solo div nav .lista-footer li a {
+          font-family: "texto", sans-serif;
+          font-size: 1rem;
+          color: black;
+          list-style-type: none;
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+          gap: normal; }
+  footer .botones-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: normal;
+    flex-wrap: nowrap;
+    gap: 1.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem; }
+    footer .botones-footer .primer-grupo-botones {
+      height: 4.375rem;
+      display: flex;
+      gap: 1.125rem; }
+      footer .botones-footer .primer-grupo-botones a img {
+        width: 2.25rem;
+        height: 2.25rem; }
+      footer .botones-footer .primer-grupo-botones a .youtube {
+        width: 3.25rem;
+        height: 2.25rem; }
+    footer .botones-footer .boton-solo {
+      width: 8.75rem;
+      height: 3rem;
+      font-family: "texto", sans-serif;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: normal;
+      background-color: #ff805a;
+      border-radius: 0.75rem; }
+      footer .botones-footer .boton-solo a {
+        color: #7b400b; }
+
+@media (max-width: 744px) {
+  header .navbar .navbar-collapse .navbar-nav .nav.items .nav-link {
+    width: max-content;
+    color: black;
+    font-family: "texto", sans-serif;
+    font-size: 1rem; }
+  header .nav-header {
+    justify-content: space-evenly; }
+    header .nav-header .listas {
+      width: 70%;
+      justify-content: space-between; }
+      header .nav-header .listas li .logo-nav {
+        width: 6rem;
+        margin: 0;
+        background-image: url("../assets/terra.png"); }
+      header .nav-header .listas li .font-nav {
+        font-size: 1rem; }
+    header .nav-header .listas-2 {
+      width: 10%;
+      justify-content: center; }
+      header .nav-header .listas-2 li .font-nav {
+        font-size: 1rem; }
+  header .hero-img {
+    height: 18.75rem;
+    background-size: cover;
+    margin-bottom: 1.5rem; }
+    header .hero-img div h1 {
+      margin-top: 3rem;
+      margin-left: 4rem;
+      font-size: 2.25rem; }
+      header .hero-img div h1 span {
+        font-size: 4rem; }
+  main {
+    margin: 0 1.5rem 0 1.5rem; }
+    main section .titulo.section {
+      margin: 0;
+      justify-content: left; }
+    main section .text-section {
+      height: 31.25rem; }
+      main section .text-section p {
+        height: 25rem;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+    main .categorias .vajilla .vajilla-container a {
+      font-size: 1.875rem;
+      margin-top: 0.5rem; }
+    main .categorias .vajilla .vajilla-container .flecha {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 0.5rem; }
+    main .categorias .container-deco-coleccion .deco .deco-container a, main .categorias .container-deco-coleccion .deco-coleccion .deco-container a {
+      font-size: 1.875rem;
+      margin-top: 0.5rem; }
+    main .titulo-con-boton div {
+      justify-content: right; }
+    main .galeria {
+      height: 19.75rem;
+      margin-bottom: 3rem; }
+    main .portada-galeria {
+      height: 18.75rem;
+      background-size: contain;
+      background-position: center;
+      padding: 0; }
+      main .portada-galeria h1 {
+        font-size: 2.25rem; }
+    main .bloque-img-galeria {
+      height: 18.75rem; }
+      main .bloque-img-galeria .bloque-img-2 {
+        height: 18.75rem; }
+        main .bloque-img-galeria .bloque-img-2 div {
+          height: 50%;
+          overflow: hidden; }
+  footer {
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1.5rem; }
+    footer .logo-footer {
+      width: 4rem;
+      background-image: url("../assets/Group 2.png"); }
+    footer div:not(.logo-footer) {
+      width: 11.75rem; }
+    footer div nav .lista-footer li .font-footer, footer div nav .lista-footer li .botones-footer .boton-solo a, footer .botones-footer .boton-solo div nav .lista-footer li a {
+      font-size: 0.75rem; } }
+
+@media (max-width: 320px) {
+  header .nav-header {
+    height: 3.125rem; }
+  header .hero-img {
+    height: 10.375rem;
+    background-size: cover;
+    margin-bottom: 1rem; }
+    header .hero-img div {
+      background-color: transparent; }
+      header .hero-img div h1 {
+        display: none; }
+  header .container {
+    margin: 0; }
+  main {
+    margin: 0 1rem 0 1rem; }
+    main p {
+      font-size: 1.25rem; }
+    main section {
+      flex-direction: column; }
+      main section .titulo-section, main section .titulo-con-boton h2, .titulo-con-boton main section h2 {
+        font-size: 1.5rem; }
+    main section .text-section {
+      width: 100%;
+      height: 28.125rem; }
+      main section .text-section p {
+        margin-bottom: 0;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      main section .text-section .buttom-container a {
+        font-size: 1rem; }
+      main section .text-section .buttom-container .img-buttom {
+        width: 2.5rem;
+        height: 2.5rem; }
+    main section .img-section {
+      display: none; }
+    main .categorias {
+      width: 100%;
+      flex-direction: column;
+      gap: 0.75rem; }
+      main .categorias .vajilla {
+        width: 100%;
+        height: 8.125rem; }
+        main .categorias .vajilla .vajilla-container {
+          height: 100%; }
+          main .categorias .vajilla .vajilla-container a {
+            font-size: 1.25rem; }
+      main .categorias .container-deco-container {
+        width: 100%;
+        height: 16.25rem; }
+        main .categorias .container-deco-container .deco .deco-container a, main .categorias .container-deco-container .container-deco-coleccion .deco-coleccion .deco-container a, main .categorias .container-deco-coleccion .container-deco-container .deco-coleccion .deco-container a {
+          font-size: 1.25rem; }
+    main .titulo-con-boton div {
+      display: none; }
+    main .galeria {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); }
+      main .galeria img:nth-child(n + 5) {
+        display: none; }
+      main .galeria img:first-child {
+        order: 2; }
+    main .portada-galeria {
+      height: 9.375rem; }
+      main .portada-galeria h1 {
+        font-size: 1.5rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+      main .portada-galeria .bloque-img-galeria {
+        height: 9.375rem;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem; }
+        main .portada-galeria .bloque-img-galeria .bloque-img-2 {
+          display: none; }
+          main .portada-galeria .bloque-img-galeria .bloque-img-2 div {
+            height: 50%;
+            overflow: hidden; }
+  footer {
+    flex-direction: column;
+    height: 28rem;
+    padding-bottom: 2rem; }
+    footer h6 {
+      font-size: 1rem;
+      margin-bottom: 0;
+      font-weight: bold;
+      color: black; }
+    footer .logo-footer {
+      display: none; }
+    footer div {
+      width: 7.625rem; }
+      footer div nav {
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+        padding: 0;
+        height: 140px; }
+        footer div nav .lista-footer li .font-footer, footer div nav .lista-footer li .botones-footer .boton-solo a, footer .botones-footer .boton-solo div nav .lista-footer li a {
+          font-family: "texto", sans-serif;
+          font-size: 0.75rem; }
+    footer .botones-footer {
+      padding-top: 1.5rem;
+      gap: 1rem;
+      padding-bottom: 0; }
+      footer .botones-footer .primer-grupo-botones {
+        justify-content: center;
+        height: 1.875rem; }
+        footer .botones-footer .primer-grupo-botones a img {
+          width: 1.5rem;
+          height: 1.5rem; }
+        footer .botones-footer .primer-grupo-botones a .youtube {
+          width: 2rem;
+          height: 1.5rem; }
+      footer .botones-footer .boton-solo {
+        width: 6.125rem;
+        height: 1.75rem;
+        border-radius: 0.75rem; }
+      footer .botones-footer .boton-solo-container {
+        display: flex;
+        justify-content: center; } }

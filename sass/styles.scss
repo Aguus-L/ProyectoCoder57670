@@ -1,0 +1,12 @@
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/tipografias";
+@import "./layout/header";
+@import "./layout/main-index";
+// Aca van los main de las otras pages
+@import "./layout/footer";
+// Aca van los componentes
+@import "./layout/media/media744";
+@import "./layout/media/media320";

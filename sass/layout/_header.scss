@@ -1,0 +1,49 @@
+.nav-header {
+  width: 100%;
+  height: 4rem;
+  background-color: map-get($colores, color-principal);
+  @include flex(row, space-around, normal, nowrap, normal);
+  .listas {
+    list-style-type: none;
+    width: 50%;
+    height: 100%;
+    @include flex(row, space-between, center, nowrap, normal);
+    li {
+      .logo-nav {
+        width: 9rem;
+        height: 2.5rem;
+        @include flex(row, center, normal, nowrap, normal);
+        @include bg(url("../assets/Group\ 1.png"), no-repeat, contain, center);
+      }
+      .font-nav {
+        @include nav-font;
+      }
+    }
+  }
+  .listas-2 {
+    list-style-type: none;
+    width: 40%;
+    height: 100%;
+    @include flex(row, right, center, nowrap, normal);
+    li {
+      .font-nav {
+        @include nav-font;
+      }
+    }
+  }
+}
+.hero-img {
+  height: 31.25rem;
+  margin-bottom: 4.375rem;
+  background-image: url("../assets/Hero\ image.png");
+  display: flex;
+  div {
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.548);
+    h1 {
+      margin-top: 4rem;
+      margin-left: 4rem;
+      color: white;
+    }
+  }
+}

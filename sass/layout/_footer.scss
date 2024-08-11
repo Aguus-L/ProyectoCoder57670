@@ -1,0 +1,74 @@
+footer {
+  width: 100%;
+  height: 15.625rem;
+  @include flex(row, center, center, nowrap, normal);
+  .logo-footer {
+    width: 15rem;
+    height: 6rem;
+    @include flex(row, center, normal, nowrap, normal);
+    @include bg(url("../assets/Group\ 1.png"), no-repeat, contain, unset);
+  }
+  div {
+    width: 22.5rem;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    nav {
+      width: 100%;
+      height: 100%;
+      @include flex(column, flex-start, center, nowrap, 1.5rem);
+      align-content: center;
+      padding-top: 3rem;
+      column-gap: 1.5rem;
+      .lista-footer {
+        text-decoration: none;
+        list-style: none;
+        @include flex(column, normal, center, nowrap, normal);
+        align-content: center;
+        li {
+          .font-footer {
+            font-family: "texto", sans-serif;
+            font-size: $fuente-1;
+            color: black;
+            list-style-type: none;
+            text-decoration: none;
+            @include flex(row, center, center, nowrap, normal);
+          }
+        }
+      }
+    }
+  }
+  .botones-footer {
+    @include flex(column, left, normal, nowrap, 1.75rem);
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    .primer-grupo-botones {
+      height: 4.375rem;
+      display: flex;
+      gap: 1.125rem;
+      a {
+        img {
+          width: 2.25rem;
+          height: 2.25rem;
+        }
+        .youtube {
+          width: 3.25rem;
+          height: 2.25rem;
+        }
+      }
+    }
+    .boton-solo {
+      width: 8.75rem;
+      height: 3rem;
+      font-family: "texto", sans-serif;
+      font-size: $fuente-1;
+      @include flex(row, center, center, nowrap, normal);
+      background-color: map-get($colores, color-acento);
+      border-radius: 0.75rem;
+      a {
+        @extend .font-footer;
+        color: map-get($colores, color-principal);
+      }
+    }
+  }
+}

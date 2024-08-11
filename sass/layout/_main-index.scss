@@ -1,0 +1,164 @@
+// Seccion de Nuestra histori y filosofia
+section {
+  .titulo-section {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+section {
+  .text-section {
+    width: 50%;
+    height: 36rem;
+    padding-right: 1rem;
+    p {
+      margin-bottom: 2.25rem;
+      text-indent: 1.5rem;
+      font-family: "texto", sans-serif;
+    }
+    .buttom-container {
+      @include flex(row, normal, center, nowrap, normal);
+      .buttom {
+        font-family: "texto", sans-serif;
+        font-size: 1.5rem;
+        color: map-get($colores, color-letras);
+      }
+      .img-buttom {
+        width: 3.125rem;
+        height: 3.125rem;
+      }
+    }
+  }
+  .img-section {
+    width: 50%;
+    height: 31.25rem;
+    overflow: hidden;
+  }
+}
+
+// Seccion de Explora nuestra tienda
+.categorias {
+  .vajilla {
+    width: 50%;
+    height: 100%;
+    margin-right: 0.75rem;
+    overflow: hidden;
+    @include bg(
+      url("../assets/monochromatic-still-life-composition-with-tableware.jpg"),
+      no-repeat,
+      cover,
+      unset
+    );
+    .vajilla-container {
+      width: 100%;
+      height: 31.25rem;
+      @include flex(row, normal, flex-start, nowrap, normal);
+      align-content: center;
+      a {
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        @include fontH2;
+      }
+      .flecha {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+  .container-deco-coleccion {
+    width: 50%;
+    @include flex(column, normal, normal, nowrap, normal);
+    .deco {
+      width: 100%;
+      height: 50%;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      @include bg(
+        url("../assets/different-shaped-white-modern-vases-arrangement_23-2149835520.jpg"),
+        no-repeat,
+        cover,
+        unset
+      );
+      .deco-container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: flex-start;
+        a {
+          margin-top: 1.5rem;
+          margin-left: 1.5rem;
+          @include flex(row, center, center, nowrap, normal);
+          @include fontH2;
+        }
+        .flecha {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+    .deco-coleccion {
+      @extend .deco;
+      @include bg(
+        url("../assets/close-up-arrangement-modern-vases.jpg"),
+        no-repeat,
+        cover,
+        center
+      );
+      margin-bottom: 0;
+      .deco-container {
+        @extend .deco-container;
+        a {
+          margin-top: 1.5rem;
+          margin-left: 1.5rem;
+          @include flex(row, center, center, nowrap, normal);
+        }
+        .flecha {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+    .bg-2 {
+      background-image: url("../assets/mixing-clay-pottery-pot.jpg");
+    }
+    .bg-3 {
+      background-image: url("../assets/pew-nguyen-gwVW9PabQKM-unsplash.jpg");
+    }
+  }
+  .bg-1 {
+    background-image: url("../assets/anne-nygard-sHyerRuFqT4-unsplash.jpg");
+  }
+}
+
+// Seccion de Coleccion de fotos
+
+.titulo-con-boton {
+  @include flex(row, space-between, center, nowrap, normal);
+  align-content: center;
+  h2 {
+    @extend .titulo-section;
+  }
+  div {
+    width: 18rem;
+    @include flex(row, right, center, nowrap, 1rem);
+    a {
+      @include nav-font;
+    }
+    img {
+      width: 30%;
+    }
+  }
+}
+
+.galeria {
+  width: 100%;
+  height: 38rem;
+  margin-bottom: 4.375rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.75rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

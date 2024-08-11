@@ -1,0 +1,153 @@
+@media (max-width: 744px) {
+  header {
+    .navbar {
+      .navbar-collapse {
+        .navbar-nav {
+          .nav.items {
+            .nav-link {
+              width: max-content;
+              color: black;
+              font-family: "texto", sans-serif;
+              font-size: $fuente-1;
+            }
+          }
+        }
+      }
+    }
+    .nav-header {
+      justify-content: space-evenly;
+      .listas {
+        width: 70%;
+        justify-content: space-between;
+        li {
+          .logo-nav {
+            width: 6rem;
+            margin: 0;
+            background-image: url("../assets/terra.png");
+          }
+          .font-nav {
+            font-size: $fuente-1;
+          }
+        }
+      }
+      .listas-2 {
+        width: 10%;
+        justify-content: center;
+        li {
+          .font-nav {
+            font-size: $fuente-1;
+          }
+        }
+      }
+    }
+    .hero-img {
+      height: 18.75rem;
+      background-size: cover;
+      margin-bottom: 1.5rem;
+      div {
+        h1 {
+          margin-top: 3rem;
+          margin-left: 4rem;
+          font-size: 2.25rem;
+          span {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+  }
+  main {
+    margin: 0 1.5rem 0 1.5rem;
+    section {
+      .titulo.section {
+        margin: 0;
+        justify-content: left;
+      }
+    }
+    section {
+      .text-section {
+        height: 31.25rem;
+        p {
+          height: 25rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .categorias {
+      .vajilla {
+        .vajilla-container {
+          a {
+            font-size: 1.875rem;
+            margin-top: 0.5rem;
+          }
+          .flecha {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      .container-deco-coleccion {
+        .deco {
+          .deco-container {
+            a {
+              font-size: 1.875rem;
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .titulo-con-boton {
+      div {
+        justify-content: right;
+      }
+    }
+    .galeria {
+      height: 19.75rem;
+      margin-bottom: 3rem;
+    }
+    .portada-galeria {
+      height: 18.75rem;
+      background-size: contain;
+      background-position: center;
+      padding: 0;
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+    .bloque-img-galeria {
+      height: 18.75rem;
+      .bloque-img-2 {
+        height: 18.75rem;
+        div {
+          height: 50%;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  footer {
+    justify-content: space-between;
+    padding: 0 1.5rem 0 1.5rem;
+    .logo-footer {
+      width: 4rem;
+      background-image: url("../assets/Group\ 2.png");
+    }
+    div {
+      &:not(.logo-footer) {
+        width: 11.75rem;
+      }
+      nav {
+        .lista-footer {
+          li {
+            .font-footer {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
