@@ -19,7 +19,9 @@ body {
 h1 {
   height: 6.25rem;
   font-family: "titulo", serif;
-  font-size: 4rem; }
+  font-size: 4rem;
+  display: flex;
+  align-items: center; }
 
 h2 {
   width: 100%;
@@ -324,23 +326,38 @@ header .hero-img-acerca {
       align-items: center;
       color: #7b400b; }
 
+main section .img-section {
+  width: 50%;
+  height: 31.25rem;
+  overflow: hidden;
+  object-fit: cover; }
+  main section .img-section img {
+    height: 100%;
+    object-fit: cover; }
+
 main section .img-section-2 {
   width: 50%;
   height: 31.25rem;
   overflow: hidden;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+  object-fit: cover; }
   main section .img-section-2 img {
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
 
 main section .text-section {
   width: 50%;
-  height: 36rem;
-  padding-right: 1rem; }
+  height: 31.25rem;
+  padding-right: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis; }
   main section .text-section p {
     margin-bottom: 2.25rem;
     text-indent: 1.5rem;
     font-family: "texto", sans-serif;
-    font-size: 20px; }
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 main .video {
   width: 100%;
@@ -357,15 +374,18 @@ main div .frase-1 {
   align-items: center;
   font-family: "texto", sans-serif;
   font-size: 1.5rem; }
-  main div .frase-1 .font-h2 {
+
+main div .frase-2 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  main div .frase-2 .font-h2 {
     font-family: "texto", sans-serif;
     font-size: 2.5rem;
     color: black; }
-
-main div div .font-h2 {
-  font-family: "texto", sans-serif;
-  font-size: 2.5rem;
-  color: black; }
 
 main .valores {
   width: 100%;
@@ -794,15 +814,27 @@ main .column-card-container .card-container {
       font-size: 2.25rem; }
       header .hero-img div h1 span {
         font-size: 4rem; }
+  header .hero-img-acerca {
+    height: 18.75rem;
+    background-size: cover;
+    margin-bottom: 1.5rem; }
+    header .hero-img-acerca div h1 {
+      margin-top: 3rem;
+      margin-left: 4rem;
+      font-size: 2.25rem; }
+      header .hero-img-acerca div h1 span {
+        font-size: 4rem; }
   main {
     margin: 0 1.5rem 0 1.5rem; }
     main section .titulo.section {
       margin: 0;
       justify-content: left; }
     main section .text-section {
-      height: 31.25rem; }
+      height: 31.25rem;
+      overflow: hidden;
+      text-overflow: ellipsis; }
       main section .text-section p {
-        height: 25rem;
+        height: 31.25rem;
         overflow: hidden;
         text-overflow: ellipsis; }
     main .categorias .vajilla .vajilla-container a {
@@ -834,6 +866,17 @@ main .column-card-container .card-container {
         main .bloque-img-galeria .bloque-img-2 div {
           height: 50%;
           overflow: hidden; }
+    main .valores .valor-izq-1 {
+      padding-left: 5rem; }
+    main .valores .valor-centro {
+      padding-right: 5rem; }
+    main .valores .valor-izq-2 {
+      padding-left: 5rem; }
+    main div .frase-1 {
+      font-size: 0.75rem;
+      text-align: center; }
+    main div .frase-2 .font-h2 {
+      font-size: 1.5rem; }
   footer {
     justify-content: space-between;
     padding: 0 1.5rem 0 1.5rem; }
@@ -865,6 +908,14 @@ main .column-card-container .card-container {
     header .hero-img div {
       background-color: transparent; }
       header .hero-img div h1 {
+        display: none; }
+  header .hero-img-acerca {
+    height: 10.375rem;
+    background-size: cover;
+    margin-bottom: 1rem; }
+    header .hero-img-acerca div {
+      background-color: transparent; }
+      header .hero-img-acerca div h1 {
         display: none; }
   header .container {
     margin: 0; }
@@ -948,6 +999,30 @@ main .column-card-container .card-container {
           overflow: hidden; }
           main .bloque-img-galeria .bloque-img-2 div img {
             height: 100%; }
+    main section {
+      display: flex;
+      flex-direction: column; }
+      main section .img-section-2 {
+        display: none; }
+    main .valores {
+      margin: 2rem o 2rem 0; }
+      main .valores .valor-izq-1 {
+        padding-left: 2rem; }
+        main .valores .valor-izq-1 h1 {
+          height: 4rem;
+          font-size: 2rem; }
+      main .valores .valor-centro {
+        padding-right: 2rem; }
+        main .valores .valor-centro h1 {
+          height: 4rem;
+          font-size: 2rem; }
+      main .valores .valor-izq-2 {
+        padding-left: 2rem; }
+        main .valores .valor-izq-2 h1 {
+          height: 4rem;
+          font-size: 2rem; }
+    main .video {
+      height: max-content; }
   footer {
     flex-direction: column;
     height: max-content;

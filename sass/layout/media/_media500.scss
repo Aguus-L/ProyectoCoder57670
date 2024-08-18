@@ -21,6 +21,17 @@
         }
       }
     }
+    .hero-img-acerca {
+      height: 10.375rem;
+      background-size: cover;
+      margin-bottom: 1rem;
+      div {
+        background-color: transparent;
+        h1 {
+          display: none;
+        }
+      }
+    }
     .container {
       margin: 0;
     }
@@ -141,6 +152,40 @@
           }
         }
       }
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      .img-section-2 {
+        display: none;
+      }
+    }
+    .valores {
+      margin: 2rem o 2rem 0;
+      .valor-izq-1 {
+        padding-left: 2rem;
+        h1 {
+          height: 4rem;
+          font-size: 2rem;
+        }
+      }
+      .valor-centro {
+        padding-right: 2rem;
+        h1 {
+          height: 4rem;
+          font-size: 2rem;
+        }
+      }
+      .valor-izq-2 {
+        padding-left: 2rem;
+        h1 {
+          height: 4rem;
+          font-size: 2rem;
+        }
+      }
+    }
+    .video {
+      height: max-content;
     }
   }
   footer {
