@@ -1,15 +1,16 @@
 footer {
   width: 100%;
   height: 15.625rem;
-  @include flex(row, center, center, nowrap, normal);
+  @include flex(row, space-around, center, nowrap, normal);
   .logo-footer {
     width: 15rem;
     height: 6rem;
+    margin-left: 2rem;
     @include flex(row, center, normal, nowrap, normal);
     @include bg(url("../assets/Group\ 1.png"), no-repeat, contain, unset);
   }
-  div {
-    width: 22.5rem;
+  .lista-shop {
+    width: 8rem;
     height: 100%;
     display: flex;
     align-content: center;
@@ -38,10 +39,15 @@ footer {
       }
     }
   }
+  .lista-acerca {
+    @extend .lista-shop;
+    width: 12rem;
+  }
   .botones-footer {
     @include flex(column, left, normal, nowrap, 1.75rem);
     padding-top: 2.5rem;
     padding-bottom: 3rem;
+    width: 13rem;
     .primer-grupo-botones {
       height: 4.375rem;
       display: flex;

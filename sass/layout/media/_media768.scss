@@ -1,24 +1,11 @@
-@media (max-width: 744px) {
+@media (max-width: 768px) {
   header {
-    .navbar {
-      .navbar-collapse {
-        .navbar-nav {
-          .nav.items {
-            .nav-link {
-              width: max-content;
-              color: black;
-              font-family: "texto", sans-serif;
-              font-size: $fuente-1;
-            }
-          }
-        }
-      }
-    }
     .nav-header {
       justify-content: space-evenly;
       .listas {
         width: 70%;
         justify-content: space-between;
+        gap: 1rem;
         li {
           .logo-nav {
             width: 6rem;
@@ -135,11 +122,27 @@
       width: 4rem;
       background-image: url("../assets/Group\ 2.png");
     }
-    div {
-      &:not(.logo-footer) {
-        width: 11.75rem;
-      }
+    .lista-shop {
+      width: 9rem;
       nav {
+        h3 {
+          font-size: 1rem;
+        }
+        .lista-footer {
+          li {
+            .font-footer {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+    .lista-acerca {
+      width: 13rem;
+      nav {
+        h3 {
+          font-size: 1rem;
+        }
         .lista-footer {
           li {
             .font-footer {

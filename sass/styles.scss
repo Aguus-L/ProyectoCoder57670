@@ -5,8 +5,11 @@
 @import "./base/tipografias";
 @import "./layout/header";
 @import "./layout/main-index";
-// Aca van los main de las otras pages
+@import "./layout/main-acerca";
+@import "./layout/main-vajilla";
+@import "./layout/main-taza";
+@import "./layout/main-galeria";
 @import "./layout/footer";
-// Aca van los componentes
-@import "./layout/media/media744";
-@import "./layout/media/media320";
+@import "./components/card";
+@import "./layout/media/media768";
+@import "./layout/media/media500";

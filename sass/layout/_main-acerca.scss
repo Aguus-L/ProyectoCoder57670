@@ -1,0 +1,101 @@
+header {
+  .hero-img-acerca {
+    height: 31.25rem;
+    margin-bottom: 4.375rem;
+    background-image: url("../assets/portrait-mother-little-girl-shaping-clay-together.jpg");
+    display: flex;
+    background-size: cover;
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7b400b;
+      }
+    }
+  }
+}
+main {
+  section {
+    .img-section-2 {
+      width: 50%;
+      height: 31.25rem;
+      overflow: hidden;
+      margin-right: 1.5rem;
+      img {
+        height: 100%;
+      }
+    }
+    .text-section {
+      width: 50%;
+      height: 36rem;
+      padding-right: 1rem;
+      p {
+        margin-bottom: 2.25rem;
+        text-indent: 1.5rem;
+        font-family: "texto", sans-serif;
+        font-size: 20px;
+      }
+    }
+  }
+  .video {
+    width: 100%;
+    height: 31.25rem;
+    margin-bottom: 4.375rem;
+    video {
+      object-fit: cover;
+    }
+  }
+  div {
+    .frase-1 {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "texto", sans-serif;
+      font-size: 1.5rem;
+      .font-h2 {
+        @include fontH2;
+      }
+    }
+    div {
+      .font-h2 {
+        @include fontH2;
+      }
+    }
+  }
+  .valores {
+    width: 100%;
+    height: max-content;
+    margin: 4.375rem 0 4.375rem 0;
+    .valor-izq-1 {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      background-image: url("../assets/wooden-walkway-leads-beacons-safety-as-twilight-colors-horizon.jpg");
+      background-size: cover;
+      padding-left: 12.5rem;
+    }
+    .valor-centro {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      background-image: url("../assets/network-concept-with-red-thread-top-view.jpg");
+      background-size: cover;
+      padding-right: 12.5rem;
+    }
+    .valor-izq-2 {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      background-image: url("../assets/sun-shining-through-trees.jpg");
+      background-size: cover;
+      padding-left: 12.5rem;
+    }
+  }
+}

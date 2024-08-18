@@ -1,7 +1,14 @@
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   header {
     .nav-header {
       height: 3.125rem;
+      .listas {
+        li {
+          &:not(:first-child) {
+            display: none;
+          }
+        }
+      }
     }
     .hero-img {
       height: 10.375rem;
@@ -22,6 +29,9 @@
     margin: 0 1rem 0 1rem;
     p {
       font-size: 1.25rem;
+    }
+    section {
+      margin-bottom: 2rem;
     }
     section {
       flex-direction: column;
@@ -66,7 +76,7 @@
           }
         }
       }
-      .container-deco-container {
+      .container-deco-coleccion {
         width: 100%;
         height: 16.25rem;
         .deco {
@@ -78,14 +88,10 @@
         }
       }
     }
-    .titulo-con-boton {
-      div {
-        display: none;
-      }
-    }
     .galeria {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      height: max-content;
       img {
         &:nth-child(n + 5) {
           display: none;
@@ -95,23 +101,43 @@
         }
       }
     }
+    .titulo-con-boton {
+      margin: 0;
+      height: 3.125rems;
+      div {
+        display: none;
+      }
+    }
     .portada-galeria {
-      height: 9.375rem;
+      height: 14rem;
+      background-size: cover;
       h1 {
         font-size: 1.5rem;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
       }
-      .bloque-img-galeria {
+    }
+    .bloque-img-galeria {
+      height: max-content;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      flex-direction: column;
+      .bloque-img-1 {
+        width: 100%;
         height: 9.375rem;
+      }
+      .bloque-img-2 {
+        width: 100%;
+        height: 9.375rem;
+        flex-direction: row;
         gap: 0.75rem;
-        margin-bottom: 0.75rem;
-        .bloque-img-2 {
-          display: none;
-          div {
-            height: 50%;
-            overflow: hidden;
+        div {
+          width: 50%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            height: 100%;
           }
         }
       }
@@ -119,7 +145,7 @@
   }
   footer {
     flex-direction: column;
-    height: 28rem;
+    height: max-content;
     padding-bottom: 2rem;
     h3 {
       font-size: 1rem;
@@ -153,6 +179,7 @@
       padding-bottom: 0;
       .primer-grupo-botones {
         justify-content: center;
+        align-self: center;
         height: 1.875rem;
         a {
           img {
@@ -166,13 +193,17 @@
         }
       }
       .boton-solo {
-        width: 6.125rem;
+        width: 9rem;
         height: 1.75rem;
         border-radius: 0.75rem;
+        align-self: center;
       }
       .boton-solo-container {
         display: flex;
         justify-content: center;
+        a {
+          font-size: 1rem;
+        }
       }
     }
   }

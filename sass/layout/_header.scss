@@ -5,9 +5,9 @@
   @include flex(row, space-around, normal, nowrap, normal);
   .listas {
     list-style-type: none;
-    width: 50%;
+    width: auto;
     height: 100%;
-    @include flex(row, space-between, center, nowrap, normal);
+    @include flex(row, space-between, center, nowrap, 2rem);
     li {
       .logo-nav {
         width: 9rem;
@@ -22,7 +22,7 @@
   }
   .listas-2 {
     list-style-type: none;
-    width: 40%;
+    width: auto;
     height: 100%;
     @include flex(row, right, center, nowrap, normal);
     li {

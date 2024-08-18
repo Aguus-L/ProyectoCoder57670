@@ -59,6 +59,7 @@ footer {
 }
 section {
   display: flex;
+  margin-bottom: 3.125rem;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -68,4 +69,5 @@ input[type="number"]::-webkit-outer-spin-button {
 ol,
 ul {
   padding-left: 0;
+  list-style: none;
 }

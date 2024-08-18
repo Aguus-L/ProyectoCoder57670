@@ -1,0 +1,29 @@
+main {
+  .column-card-container {
+    .card-container {
+      width: 18.25rem;
+      height: 100%;
+      .img-card-container {
+        width: 100%;
+        height: 19.5rem;
+        a {
+          height: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .texto-card {
+        width: 18.25rem;
+        height: 4.375rem;
+        font-family: "texto", sans-serif;
+        font-size: 1rem;
+        padding: 1.1563rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
