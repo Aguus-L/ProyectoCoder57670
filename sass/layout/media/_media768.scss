@@ -153,6 +153,53 @@
         }
       }
     }
+    .seccion-producto {
+      .descripcion {
+        h2 {
+          font-size: 1.5rem;
+          height: max-content;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+        div {
+          .boton-cantidad-container {
+            align-items: flex-end;
+            div {
+              .precio {
+                font-size: 2rem;
+                margin-bottom: 0;
+              }
+            }
+          }
+          .boton-comprar-container {
+            height: 3.625rem;
+            .boton-comprar {
+              width: 10.25rem;
+              height: 100%;
+              font-size: 1.5rem;
+              margin-right: 1rem;
+            }
+            .boton-favoritos {
+              height: 100%;
+              width: 3.625rem;
+            }
+          }
+        }
+      }
+    }
+    .section-con-titulo {
+      .flex-column {
+        margin-bottom: 0;
+      }
+    }
+    .grid-column {
+      grid-template-columns: repeat(3, minmax(132px, 1fr));
+      .column-4 {
+        display: none;
+      }
+    }
   }
   footer {
     justify-content: space-between;

@@ -414,82 +414,97 @@ main .valores {
     padding-left: 12.5rem; }
 
 main .grid-column {
-  width: 77.5rem;
-  height: 77.5rem;
+  width: 100%;
+  height: max-content;
   display: grid;
-  grid-template-areas: ".filtro-container" ".column-2" ".column-3" ".column-4";
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, minmax(150px, 1fr)); }
   main .grid-column .filtro-container {
     padding: 1rem;
-    width: 18.25rem;
     display: flex;
     flex-direction: column;
     display: inline-block; }
-  main .grid-column .filtro-precio {
+    main .grid-column .filtro-container .filtro-precio {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      main .grid-column .filtro-container .filtro-precio div form {
+        display: flex; }
+        main .grid-column .filtro-container .filtro-precio div form input {
+          width: 50%; }
+      main .grid-column .filtro-container .filtro-precio .nombre-boton {
+        display: flex;
+        font-family: "texto", sans-serif;
+        font-size: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-top: 0.75rem;
+        align-items: center;
+        justify-content: space-between; }
+        main .grid-column .filtro-container .filtro-precio .nombre-boton button {
+          width: 1.5rem;
+          height: 1.5rem;
+          border: none;
+          background: none; }
+          main .grid-column .filtro-container .filtro-precio .nombre-boton button .drop {
+            width: 1rem;
+            height: 1rem; }
+      main .grid-column .filtro-container .filtro-precio div {
+        padding-bottom: 0.75rem; }
+        main .grid-column .filtro-container .filtro-precio div form {
+          display: flex; }
+          main .grid-column .filtro-container .filtro-precio div form input {
+            width: 6.125rem;
+            margin-right: 0.75rem; }
+      main .grid-column .filtro-container .filtro-precio .lista-filtro {
+        list-style: none; }
+        main .grid-column .filtro-container .filtro-precio .lista-filtro li {
+          list-style: none;
+          padding-bottom: 0.5rem; }
+          main .grid-column .filtro-container .filtro-precio .lista-filtro li .fuente-input {
+            font-family: "texto", sans-serif;
+            font-size: 0.75rem; }
+  main .grid-column .nombre-boton {
+    display: flex;
+    font-family: "texto", sans-serif;
+    font-size: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    align-items: center;
+    justify-content: space-between; }
+    main .grid-column .nombre-boton button {
+      width: 1.5rem;
+      height: 1.5rem;
+      border: none;
+      background: none; }
+      main .grid-column .nombre-boton button .drop {
+        width: 1rem;
+        height: 1rem; }
+  main .grid-column .column-card-container {
+    max-width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    width: 100%; }
-    main .grid-column .filtro-precio .nombre-boton {
-      display: flex;
-      font-family: "texto", sans-serif;
-      font-size: 0.75rem;
-      padding-bottom: 0.75rem;
-      padding-top: 0.75rem;
-      align-items: center;
-      justify-content: space-between; }
-      main .grid-column .filtro-precio .nombre-boton button {
-        width: 1.5rem;
-        height: 1.5rem;
-        border: none;
-        background: none; }
-        main .grid-column .filtro-precio .nombre-boton button .drop {
-          width: 1rem;
-          height: 1rem; }
-    main .grid-column .filtro-precio div {
-      padding-bottom: 0.75rem; }
-      main .grid-column .filtro-precio div form {
-        display: flex; }
-        main .grid-column .filtro-precio div form input {
-          width: 6.125rem;
-          margin-right: 0.75rem; }
-    main .grid-column .filtro-precio .lista-filtro {
-      list-style: none; }
-      main .grid-column .filtro-precio .lista-filtro li {
-        list-style: none;
-        padding-bottom: 0.5rem; }
-        main .grid-column .filtro-precio .lista-filtro li .fuente-input {
-          font-family: "texto", sans-serif;
-          font-size: 0.75rem; }
+    gap: 1.5rem; }
+    main .grid-column .column-card-container .card-container {
+      width: 100%; }
+      main .grid-column .column-card-container .card-container .img-card-container {
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        height: auto; }
+        main .grid-column .column-card-container .card-container .img-card-container a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; }
+      main .grid-column .column-card-container .card-container .texto-card {
+        width: 100%; }
 
-main .nombre-boton {
-  display: flex;
-  font-family: "texto", sans-serif;
-  font-size: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
-  align-items: center;
-  justify-content: space-between; }
-  main .nombre-boton button {
-    width: 1.5rem;
-    height: 1.5rem;
-    border: none;
-    background: none; }
-    main .nombre-boton button .drop {
-      width: 1rem;
-      height: 1rem; }
-
-main .column-card-container {
-  width: 18.25rem;
-  height: 23.875rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem; }
-
-main .flex-column {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 6.25rem; }
+main .section-con-titulo {
+  flex-direction: column; }
+  main .section-con-titulo .flex-column {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 6.25rem; }
 
 main div .direccion {
   display: flex;
@@ -504,73 +519,86 @@ main div .direccion {
     font-size: 16px; }
 
 main .seccion-producto {
-  width: 77.5rem;
+  width: 100%;
+  height: max-content;
   gap: 1.5rem; }
   main .seccion-producto .foto-container {
-    width: 38rem;
-    height: 37.25rem; }
+    width: 50%;
+    height: 37.25rem;
+    overflow: hidden; }
     main .seccion-producto .foto-container .foto-1 {
-      width: 38rem;
+      width: 100%;
       height: 27.875rem;
       margin-bottom: 0.75rem; }
       main .seccion-producto .foto-container .foto-1 img {
-        width: 38rem;
+        width: 100%;
         height: 27.875rem;
         object-fit: cover; }
     main .seccion-producto .foto-container .fotos-abajo {
-      width: 38rem;
+      width: 100%;
       height: 9.375rem;
       display: flex;
       gap: 0.75rem; }
       main .seccion-producto .foto-container .fotos-abajo .foto-2 {
-        width: 12.1667rem;
+        width: 33.33%;
         height: 9.375rem; }
         main .seccion-producto .foto-container .fotos-abajo .foto-2 img {
-          width: 12.1667rem;
+          width: 100%;
           height: 9.375rem;
           object-fit: cover; }
   main .seccion-producto .descripcion {
-    width: 38rem;
-    height: 37rem; }
+    width: 50%;
+    height: max-content; }
     main .seccion-producto .descripcion p {
       margin-bottom: 2rem; }
-    main .seccion-producto .descripcion div .cantidad {
-      margin-bottom: 1rem; }
     main .seccion-producto .descripcion div .boton-cantidad-container {
       display: flex;
       margin-bottom: 1.5rem; }
-      main .seccion-producto .descripcion div .boton-cantidad-container div .boton-cantidad-1 {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 1rem 0 0 1rem;
-        border-right-style: none;
-        background-color: #968773;
-        border-color: black;
-        color: white; }
-      main .seccion-producto .descripcion div .boton-cantidad-container div .numero {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-left-style: none;
-        border-right-style: none;
-        border-color: black;
-        text-align: center; }
-      main .seccion-producto .descripcion div .boton-cantidad-container div .boton-cantidad-2 {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 0 1rem 1rem 0;
-        border-left-style: none;
-        background-color: #968773;
-        border-color: black;
-        color: white; }
-    main .seccion-producto .descripcion div .precio {
-      font-family: "texto", sans-serif;
-      font-size: 64px;
-      color: #ff805a;
-      margin-bottom: 1.75rem; }
+      main .seccion-producto .descripcion div .boton-cantidad-container div {
+        width: max-content; }
+        main .seccion-producto .descripcion div .boton-cantidad-container div .cantidad {
+          margin-bottom: 1rem; }
+        main .seccion-producto .descripcion div .boton-cantidad-container div div {
+          display: flex; }
+          main .seccion-producto .descripcion div .boton-cantidad-container div div .boton-cantidad-1 {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 1rem 0 0 1rem;
+            border-right-style: none;
+            background-color: #968773;
+            border-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+        main .seccion-producto .descripcion div .boton-cantidad-container div div .numero {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-left-style: none;
+          border-right-style: none;
+          border-color: black;
+          text-align: center; }
+        main .seccion-producto .descripcion div .boton-cantidad-container div div .boton-cantidad-2 {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 0 1rem 1rem 0;
+          border-left-style: none;
+          background-color: #968773;
+          border-color: black;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+      main .seccion-producto .descripcion div .boton-cantidad-container div .precio {
+        font-family: "texto", sans-serif;
+        font-size: 64px;
+        color: #ff805a;
+        margin-bottom: 1.75rem;
+        margin-left: 2rem; }
     main .seccion-producto .descripcion div .boton-comprar-container {
       display: flex;
-      width: 24.375rem;
-      height: 4.625; }
+      width: max-content;
+      height: 4.625rem; }
       main .seccion-producto .descripcion div .boton-comprar-container .boton-comprar {
         width: 13.75rem;
         height: 4.625rem;
@@ -580,7 +608,7 @@ main .seccion-producto {
         color: #7b400b;
         font-family: "texto", sans-serif;
         font-size: 32px;
-        margin-right: 6rem; }
+        margin-right: 3rem; }
       main .seccion-producto .descripcion div .boton-comprar-container .boton-favoritos {
         width: 4.625rem;
         height: 4.625rem;
@@ -667,7 +695,7 @@ main .nav-flex {
 
 footer {
   width: 100%;
-  height: 15.625rem;
+  height: max-content;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -877,6 +905,33 @@ main .column-card-container .card-container {
       text-align: center; }
     main div .frase-2 .font-h2 {
       font-size: 1.5rem; }
+    main .seccion-producto .descripcion h2 {
+      font-size: 1.5rem;
+      height: max-content;
+      margin-bottom: 1rem; }
+    main .seccion-producto .descripcion p {
+      font-size: 1.25rem; }
+    main .seccion-producto .descripcion div .boton-cantidad-container {
+      align-items: flex-end; }
+      main .seccion-producto .descripcion div .boton-cantidad-container div .precio {
+        font-size: 2rem;
+        margin-bottom: 0; }
+    main .seccion-producto .descripcion div .boton-comprar-container {
+      height: 3.625rem; }
+      main .seccion-producto .descripcion div .boton-comprar-container .boton-comprar {
+        width: 10.25rem;
+        height: 100%;
+        font-size: 1.5rem;
+        margin-right: 1rem; }
+      main .seccion-producto .descripcion div .boton-comprar-container .boton-favoritos {
+        height: 100%;
+        width: 3.625rem; }
+    main .section-con-titulo .flex-column {
+      margin-bottom: 0; }
+    main .grid-column {
+      grid-template-columns: repeat(3, minmax(132px, 1fr)); }
+      main .grid-column .column-4 {
+        display: none; }
   footer {
     justify-content: space-between;
     padding: 0 1.5rem 0 1.5rem; }
@@ -1023,6 +1078,27 @@ main .column-card-container .card-container {
           font-size: 2rem; }
     main .video {
       height: max-content; }
+    main .seccion-producto .foto-container {
+      width: 100%;
+      height: max-content; }
+      main .seccion-producto .foto-container .fotos-abajo {
+        display: none; }
+    main .seccion-producto .descripcion {
+      width: 100%; }
+    main .section-con-titulo h2 {
+      font-size: 2rem; }
+    main .section-con-titulo div h2 {
+      font-size: 2rem; }
+    main .section-con-titulo div p {
+      font-size: 1.25rem; }
+    main .section-con-titulo .flex-column .card-container:last-child {
+      display: none; }
+    main .grid-column {
+      grid-template-columns: repeat(2, minmax(132px, 1fr)); }
+      main .grid-column .filtro-container {
+        display: none; }
+    main .nav-flex {
+      justify-content: center; }
   footer {
     flex-direction: column;
     height: max-content;

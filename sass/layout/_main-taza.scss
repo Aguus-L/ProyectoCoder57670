@@ -17,31 +17,33 @@ main {
     }
   }
   .seccion-producto {
-    width: 77.5rem;
+    width: 100%;
+    height: max-content;
     gap: 1.5rem;
     .foto-container {
-      width: 38rem;
+      width: 50%;
       height: 37.25rem;
+      overflow: hidden;
       .foto-1 {
-        width: 38rem;
+        width: 100%;
         height: 27.875rem;
         margin-bottom: 0.75rem;
         img {
-          width: 38rem;
+          width: 100%;
           height: 27.875rem;
           object-fit: cover;
         }
       }
       .fotos-abajo {
-        width: 38rem;
+        width: 100%;
         height: 9.375rem;
         display: flex;
         gap: 0.75rem;
         .foto-2 {
-          width: 12.1667rem;
+          width: 33.33%;
           height: 9.375rem;
           img {
-            width: 12.1667rem;
+            width: 100%;
             height: 9.375rem;
             object-fit: cover;
           }
@@ -49,61 +51,74 @@ main {
       }
     }
     .descripcion {
-      width: 38rem;
-      height: 37rem;
+      width: 50%;
+      height: max-content;
       p {
         margin-bottom: 2rem;
       }
       div {
-        .cantidad {
-          margin-bottom: 1rem;
-        }
         .boton-cantidad-container {
           display: flex;
           margin-bottom: 1.5rem;
           div {
-            .boton-cantidad-1 {
-              width: 2.5rem;
-              height: 2.5rem;
-              border-radius: 1rem 0 0 1rem;
-              border-right-style: none;
-              background-color: #968773;
-              border-color: black;
-              color: white;
+            width: max-content;
+            .cantidad {
+              margin-bottom: 1rem;
+            }
+            div {
+              display: flex;
+              .boton-cantidad-1 {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 1rem 0 0 1rem;
+                border-right-style: none;
+                background-color: #968773;
+                border-color: black;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+            div {
+              .numero {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-left-style: none;
+                border-right-style: none;
+                border-color: black;
+                text-align: center;
+              }
+            }
+            div {
+              .boton-cantidad-2 {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 0 1rem 1rem 0;
+                border-left-style: none;
+                background-color: #968773;
+                border-color: black;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
             }
           }
           div {
-            .numero {
-              width: 2.5rem;
-              height: 2.5rem;
-              border-left-style: none;
-              border-right-style: none;
-              border-color: black;
-              text-align: center;
+            .precio {
+              font-family: "texto", sans-serif;
+              font-size: 64px;
+              color: #ff805a;
+              margin-bottom: 1.75rem;
+              margin-left: 2rem;
             }
           }
-          div {
-            .boton-cantidad-2 {
-              width: 2.5rem;
-              height: 2.5rem;
-              border-radius: 0 1rem 1rem 0;
-              border-left-style: none;
-              background-color: #968773;
-              border-color: black;
-              color: white;
-            }
-          }
-        }
-        .precio {
-          font-family: "texto", sans-serif;
-          font-size: 64px;
-          color: #ff805a;
-          margin-bottom: 1.75rem;
         }
         .boton-comprar-container {
           display: flex;
-          width: 24.375rem;
-          height: 4.625;
+          width: max-content;
+          height: 4.625rem;
           .boton-comprar {
             width: 13.75rem;
             height: 4.625rem;
@@ -113,7 +128,7 @@ main {
             color: #7b400b;
             font-family: "texto", sans-serif;
             font-size: 32px;
-            margin-right: 6rem;
+            margin-right: 3rem;
           }
           .boton-favoritos {
             width: 4.625rem;

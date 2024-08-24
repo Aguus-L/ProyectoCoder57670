@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  height: 15.625rem;
+  height: max-content;
   @include flex(row, space-around, center, nowrap, normal);
   .logo-footer {
     width: 15rem;

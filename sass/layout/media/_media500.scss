@@ -187,6 +187,49 @@
     .video {
       height: max-content;
     }
+    .seccion-producto {
+      .foto-container {
+        width: 100%;
+        height: max-content;
+        .fotos-abajo {
+          display: none;
+        }
+      }
+      .descripcion {
+        width: 100%;
+      }
+    }
+    .section-con-titulo {
+      h2 {
+        font-size: 2rem;
+      }
+      div {
+        h2 {
+          font-size: 2rem;
+        }
+      }
+      div {
+        p {
+          font-size: 1.25rem;
+        }
+      }
+      .flex-column {
+        .card-container {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+    .grid-column {
+      grid-template-columns: repeat(2, minmax(132px, 1fr));
+      .filtro-container {
+        display: none;
+      }
+    }
+    .nav-flex {
+      justify-content: center;
+    }
   }
   footer {
     flex-direction: column;
