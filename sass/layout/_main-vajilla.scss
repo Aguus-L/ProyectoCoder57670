@@ -91,54 +91,109 @@ main {
       gap: 1.5rem;
       .card-container {
         width: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+        &:hover {
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
         .img-card-container {
           aspect-ratio: 4 / 5;
           overflow: hidden;
           height: auto;
+          position: relative;
           a {
             img {
               width: 100%;
               height: 100%;
               object-fit: cover;
               object-position: center;
+              display: block;
             }
           }
-        }
-        .texto-card {
-          width: 100%;
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            .favorite-btn {
+              background: #fff;
+              color: #333;
+              border: none;
+              padding: 8px;
+              border-radius: 50%;
+              cursor: pointer;
+              opacity: 0;
+              transition: opacity 0.3s ease, transform 0.3s ease;
+              align-self: flex-end;
+            }
+            .add-to-cart-btn {
+              @extend .favorite-btn;
+              align-self: center;
+              padding: 10px 15px;
+              border-radius: 0;
+              font-size: 14px;
+              background-color: #ff6f61;
+              color: #fff;
+            }
+          }
+          &:hover {
+            .overlay {
+              opacity: 1;
+            }
+            .favorite-btn {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            .add-to-cart-btn {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .texto-card {
+            width: 100%;
+          }
         }
       }
     }
-  }
-  .section-con-titulo {
-    flex-direction: column;
-    .flex-column {
-      max-width: 100%;
-      height: max-content;
-      display: flex;
-      gap: 1.5rem;
-      margin-bottom: 6.25rem;
-      .card-container {
+    .section-con-titulo {
+      flex-direction: column;
+      .flex-column {
+        max-width: 100%;
         height: max-content;
-        .img-card-container {
-          width: 100%;
-          aspect-ratio: 4 / 5;
-          overflow: hidden;
-          height: 100%;
-          img {
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        .texto-card {
-          width: 100%;
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 6.25rem;
+        .card-container {
           height: max-content;
-          font-family: "texto", sans-serif;
-          font-size: 1rem;
-          padding: 1.1563rem 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          .img-card-container {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            height: 100%;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .texto-card {
+            width: 100%;
+            height: max-content;
+            font-family: "texto", sans-serif;
+            font-size: 1rem;
+            padding: 1.1563rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
         }
       }
     }
