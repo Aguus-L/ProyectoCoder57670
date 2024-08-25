@@ -191,7 +191,37 @@
     }
     .section-con-titulo {
       .flex-column {
+        max-width: 100%;
+        height: max-content;
+        display: flex;
+        gap: 0.75rem;
         margin-bottom: 0;
+        .card-container {
+          height: max-content;
+          &:last-child {
+            display: none;
+          }
+          .img-card-container {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            height: 100%;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .texto-card {
+            width: 100%;
+            height: max-content;
+            font-family: "texto", sans-serif;
+            font-size: 0.75rem;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
       }
     }
     .grid-column {

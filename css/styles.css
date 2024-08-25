@@ -148,7 +148,8 @@ ul {
     .hero-img div h1 {
       margin-top: 4rem;
       margin-left: 4rem;
-      color: white; }
+      color: white;
+      display: block; }
 
 section .titulo-section, section .titulo-con-boton h2, .titulo-con-boton section h2 {
   margin-top: 1.5rem;
@@ -502,9 +503,30 @@ main .grid-column {
 main .section-con-titulo {
   flex-direction: column; }
   main .section-con-titulo .flex-column {
+    max-width: 100%;
+    height: max-content;
     display: flex;
     gap: 1.5rem;
     margin-bottom: 6.25rem; }
+    main .section-con-titulo .flex-column .card-container {
+      height: max-content; }
+      main .section-con-titulo .flex-column .card-container .img-card-container {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        height: 100%; }
+        main .section-con-titulo .flex-column .card-container .img-card-container img {
+          height: 100%;
+          object-fit: cover; }
+      main .section-con-titulo .flex-column .card-container .texto-card {
+        width: 100%;
+        height: max-content;
+        font-family: "texto", sans-serif;
+        font-size: 1rem;
+        padding: 1.1563rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
 
 main div .direccion {
   display: flex;
@@ -809,7 +831,7 @@ main .column-card-container .card-container {
     height: 4.375rem;
     font-family: "texto", sans-serif;
     font-size: 1rem;
-    padding: 1.1563rem 1rem;
+    padding: 1.1563rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -927,7 +949,32 @@ main .column-card-container .card-container {
         height: 100%;
         width: 3.625rem; }
     main .section-con-titulo .flex-column {
+      max-width: 100%;
+      height: max-content;
+      display: flex;
+      gap: 0.75rem;
       margin-bottom: 0; }
+      main .section-con-titulo .flex-column .card-container {
+        height: max-content; }
+        main .section-con-titulo .flex-column .card-container:last-child {
+          display: none; }
+        main .section-con-titulo .flex-column .card-container .img-card-container {
+          width: 100%;
+          aspect-ratio: 4 / 5;
+          overflow: hidden;
+          height: 100%; }
+          main .section-con-titulo .flex-column .card-container .img-card-container img {
+            height: 100%;
+            object-fit: cover; }
+        main .section-con-titulo .flex-column .card-container .texto-card {
+          width: 100%;
+          height: max-content;
+          font-family: "texto", sans-serif;
+          font-size: 0.75rem;
+          padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
     main .grid-column {
       grid-template-columns: repeat(3, minmax(132px, 1fr)); }
       main .grid-column .column-4 {
@@ -976,6 +1023,11 @@ main .column-card-container .card-container {
     margin: 0; }
   main {
     margin: 0 1rem 0 1rem; }
+    main div .direccion {
+      padding-top: 2rem;
+      padding-bottom: 0; }
+    main h1 {
+      font-size: 3rem; }
     main p {
       font-size: 1.25rem; }
     main section {
@@ -1032,7 +1084,6 @@ main .column-card-container .card-container {
       background-size: cover; }
       main .portada-galeria h1 {
         font-size: 1.5rem;
-        white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden; }
     main .bloque-img-galeria {
@@ -1091,12 +1142,18 @@ main .column-card-container .card-container {
       font-size: 2rem; }
     main .section-con-titulo div p {
       font-size: 1.25rem; }
-    main .section-con-titulo .flex-column .card-container:last-child {
+    main .section-con-titulo .flex-column .card-container:nth-child(3) {
       display: none; }
+    main .section-con-titulo .flex-column .card-container:nth-child(4) {
+      display: none; }
+    main .section-con-titulo .flex-column .card-container .texto-card h3 {
+      font-size: 0.75rem; }
     main .grid-column {
       grid-template-columns: repeat(2, minmax(132px, 1fr)); }
       main .grid-column .filtro-container {
         display: none; }
+      main .grid-column .column-card-container .card-container .texto-card h3 {
+        font-size: 0.75rem; }
     main .nav-flex {
       justify-content: center; }
   footer {

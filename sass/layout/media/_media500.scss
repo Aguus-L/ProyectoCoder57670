@@ -38,6 +38,15 @@
   }
   main {
     margin: 0 1rem 0 1rem;
+    div {
+      .direccion {
+        padding-top: 2rem;
+        padding-bottom: 0;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+    }
     p {
       font-size: 1.25rem;
     }
@@ -124,7 +133,6 @@
       background-size: cover;
       h1 {
         font-size: 1.5rem;
-        white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
       }
@@ -215,8 +223,16 @@
       }
       .flex-column {
         .card-container {
-          &:last-child {
+          &:nth-child(3) {
             display: none;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+          .texto-card {
+            h3 {
+              font-size: 0.75rem;
+            }
           }
         }
       }
@@ -225,6 +241,15 @@
       grid-template-columns: repeat(2, minmax(132px, 1fr));
       .filtro-container {
         display: none;
+      }
+      .column-card-container {
+        .card-container {
+          .texto-card {
+            h3 {
+              font-size: 0.75rem;
+            }
+          }
+        }
       }
     }
     .nav-flex {
